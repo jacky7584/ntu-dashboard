@@ -7,7 +7,7 @@ export default function ChickenHealthStatus({ farms }: { farms: { id: number, na
   
           return (
             <div key={farm.id} className="relative w-full overflow-hidden bg-white shadow-lg p-4 rounded-lg">
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between w-full">
                 <div className="flex items-center gap-4">
                   <span className={`relative rounded-full ${healthColor} p-3`}>
                     <svg
@@ -21,7 +21,7 @@ export default function ChickenHealthStatus({ farms }: { farms: { id: number, na
                       <path d="M19 10h-5V5c0-.55-.45-1-1-1s-1 .45-1 1v5H7c-.55 0-1 .45-1 1s.45 1 1 1h5v5c0 .55.45 1 1 1s1-.45 1-1v-5h5c.55 0 1-.45 1-1s-.45-1-1-1z"/>
                     </svg>
                   </span>
-                  <p className="ml-2 text-sm font-semibold text-gray-700 gap-4">{farm.name}</p>
+                  <p className="ml-2 text-sm font-semibold text-gray-700 gap-4 w-10">{farm.name}</p>
                 </div>
                 <div className="text-lg font-bold text-black ml-4">{farm.health}/{farm.total}</div>
               </div>

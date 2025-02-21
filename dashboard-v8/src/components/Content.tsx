@@ -46,10 +46,10 @@ export function Content(props: ContentProps) {
   return (
     <div className="relative h-screen overflow-hidden bg-gray-100">
       <div className="my-6 flex w-full flex-col items-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-        <div className="w-full md:w-6/12">
+        <div className="w-full">
           <div className="relative w-full overflow-hidden bg-white shadow-lg">
             <a href="#" className="block h-full w-full">
-              <div className="flex items-center justify-between space-x-4 px-4 py-6">
+              <div className="flex items-center justify-center space-x-4 px-4 py-6 w-full">
                 <div className="flex items-center">
                   <span className="relative rounded-full bg-red-100 p-5">
                     <svg
@@ -63,7 +63,7 @@ export function Content(props: ContentProps) {
                       <path d="M19 10h-5V5c0-.55-.45-1-1-1s-1 .45-1 1v5H7c-.55 0-1 .45-1 1s.45 1 1 1h5v5c0 .55.45 1 1 1s1-.45 1-1v-5h5c.55 0 1-.45 1-1s-.45-1-1-1z"/>
                     </svg>
                   </span>
-                  <p className="ml-2 border-b border-gray-200 text-sm font-semibold text-gray-700">
+                  <p className="ml-2 border-b border-gray-200 text-sm font-semibold text-gray-700 w-30">
                     健康比例
                   </p>
                 </div>
@@ -73,7 +73,7 @@ export function Content(props: ContentProps) {
           </div>
         </div>
         <div className="flex w-full items-center space-x-4 md:w-1/2">
-          <div className="w-1/2">
+          <div className="w-full">
             <div className="relative w-full bg-white px-4 py-6 shadow-lg flex items-center justify-between">
               <div className="flex flex-col">
                 <p className="text-2xl font-bold text-black">{weather?.temperature} °C</p>
